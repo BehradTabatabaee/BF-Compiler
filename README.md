@@ -21,8 +21,8 @@ An efficient Brainfuck-to-C compiler written in Python, featuring parsing, loop 
 1. Clone this repository:
 
    ```sh
-   git clone https://github.com/yourusername/optimizing-brainfuck-compiler.git
-   cd optimizing-brainfuck-compiler
+   git clone https://github.com/BehradTabatabaee/BF-Compiler.git
+   cd BF-Compiler
    ```
 
 2. (Optional) Create a virtual environment:
@@ -31,8 +31,6 @@ An efficient Brainfuck-to-C compiler written in Python, featuring parsing, loop 
    python3 -m venv env
    source env/bin/activate
    ```
-
-3. Install any required packages (none in this repository). All code uses standard library modules.
 
 ## Usage
 
@@ -45,7 +43,7 @@ python compiler.py path/to/program.bf path/to/output.c
 Compile the generated C:
 
 ```sh
-gcc -O2 -o program path/to/output.c
+gcc -O2 path/to/output.c -o ./program 
 ```
 
 Run your program:
@@ -67,7 +65,7 @@ Generate and build:
 
 ```sh
 python compiler.py hello.bf hello.c
-gcc -O2 -o hello hello.c
+gcc -O2 hello.c -o ./hello
 ./hello
 # Output: Hello World!
 ```
